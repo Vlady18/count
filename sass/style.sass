@@ -1,0 +1,1535 @@
+@font-face
+	font-family: 'BebasNeueBold'
+	src: url('../fonts/BebasNeueBold.eot') format('eot'), url('../fonts/BebasNeueBold.woff') format('woff'), url('../fonts/BebasNeueBold.ttf') format('truetype')
+@font-face
+	font-family: 'BebasNeueBook'
+	src: url('../fonts/BebasNeueBook.eot') format('eot'), url('../fonts/BebasNeueBook.woff') format('woff'), url('../fonts/BebasNeueBook.ttf') format('truetype')
+@font-face
+	font-family: 'BebasNeueRegular'
+	src: url('../fonts/BebasNeueRegular.eot') format('eot'), url('../fonts/BebasNeueRegular.woff') format('woff'), url('../fonts/BebasNeueRegular.ttf') format('truetype')
+
+@font-face 
+	font-family: 'CalibriLightItalic'
+	src: url('../fonts/Calibri-LightItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/Calibri-LightItalic.woff2') format('woff2'), url('../fonts/Calibri-LightItalic.woff') format('woff'), url('../fonts/Calibri-LightItalic.ttf') format('truetype')
+@font-face 
+	font-family: 'CalibriItalic'
+	src: url('../fonts/Calibri-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/Calibri-Italic.woff2') format('woff2'), url('../fonts/Calibri-Italic.woff') format('woff'), url('../fonts/Calibri-Italic.ttf') format('truetype')
+@font-face 
+	font-family: 'CalibriLight'
+	src: url('../fonts/Calibri-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Calibri-Light.woff2') format('woff2'), url('../fonts/Calibri-Light.woff') format('woff'), url('../fonts/Calibri-Light.ttf') format('truetype')
+@font-face 
+	font-family: 'CalibriBold'
+	src: url('../fonts/Calibri-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Calibri-Bold.woff2') format('woff2'), url('../fonts/Calibri-Bold.woff') format('woff'), url('../fonts/Calibri-Bold.ttf') format('truetype')
+@font-face 
+	font-family: 'Calibri'
+	src: url('../fonts/Calibri.eot?#iefix') format('embedded-opentype'), url('../fonts/Calibri.woff2') format('woff2'), url('../fonts/Calibri.woff') format('woff'), url('../fonts/Calibri.ttf') format('truetype')
+@font-face 
+	font-family: 'CalibriBoldItalic'
+	src: url('../fonts/Calibri-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/Calibri-BoldItalic.woff2') format('woff2'), url('../fonts/Calibri-BoldItalic.woff') format('woff'), url('../fonts/Calibri-BoldItalic.ttf') format('truetype')
+
+@font-face 
+	font-family: 'Exo20-Black'
+	src: url('../fonts/Exo20-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/Exo20-Black.woff') format('woff'), url('../fonts/Exo20-Black.ttf') format('truetype')
+
+@font-face 
+	font-family: 'Exo20-Regular'
+	src: url('../fonts/Exo20-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Exo20-Regular.woff') format('woff'), url('../fonts/Exo20-Regular.ttf') format('truetype')
+
+
+@font-face
+	font-family: 'Montserrat-Regular'
+	src: url('../fonts/Montserrat-Regular.eot') format('eot'), url('../fonts/Montserrat-Regular.ttf') format('truetype')
+@font-face
+	font-family: 'Montserrat-Bold'
+	src: url('../fonts/Montserrat-Bold.eot') format('eot'), url('../fonts/Montserrat-Bold.ttf') format('truetype')
+body, html
+	// background: red
+	overflow-x: hidden
+	
+p
+	margin: 0
+*
+	outline: none
+	box-sizing: border-box
+.clearfix::after 
+	content: ""
+	clear: both
+	display: table
+img
+	max-width: 100%
+.container
+	width: 90%
+	max-width: 1220px
+	margin: 0 auto
+.header_sect
+	position: relative
+	header
+		.slider_el
+			background: url(../img/header_bg.png) no-repeat center/cover
+	.top_line
+		background: rgba(255, 255, 255, .2)
+		padding: 14px 0px 20px 0px
+		position: absolute
+		z-index: 3
+		left: 0
+		right: 0
+		top: 0
+		width: 100%
+	.wrap_head
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.service_info
+			min-width: 430px
+			ul
+				margin: 0
+				padding: 0
+				list-style: none
+				display: flex
+				justify-content: space-between
+				div
+					&:first-child
+						flex-grow: 2
+				li.li_phone
+					list-style-image: url(../img/phone_v.png)
+					margin-bottom: 18px
+					// margin-left: 10px
+					padding-left: 10px
+					a
+						font-size: 20px
+						font-weight: 700
+						font-family: "CalibriBold"
+						text-decoration: none
+						color: #fff
+					p
+						color: #898989
+						font-family: 'Calibri'
+						font-size: 14px
+						font-weight: 400
+				li.li_message
+					padding-left: 10px
+
+					list-style-image: url(../img/message_v.png)
+					a
+						color: #898989
+						font-family: Calibri
+						font-size: 18px
+						font-weight: 400
+						text-decoration: none
+						
+				li.li_address
+					list-style-image: url(../img/user_v.png)
+					padding-left: 10px
+
+					p
+						&:first-child
+							color: #ffffff
+							font-family: CalibriBold
+							font-size: 20px
+							font-weight: 700
+							margin-bottom: 10px
+						color: #ffffff
+						font-family: Calibri
+						font-size: 18px
+						font-weight: 400
+						// line-height: 12px
+		.head_form
+			position: relative
+			max-width: 205px
+			a
+				display: block
+				text-decoration: none
+				text-align: center
+				color: #fff
+				background: #e50a0a
+				border-radius: 15px
+				border: 2px solid #e50a0a
+				// padding: 11px 0px
+				height: 35px
+				transition: all .3s ease
+				line-height: 30px
+				margin-top: 12px
+				color: #ffffff
+				font-family: Calibri
+				font-size: 18px
+				font-weight: 400
+				&:hover
+					background: darken(#e50a0a, 5%)
+					border: 2px solid #fff
+
+			input
+				border: 2px solid #ffffff
+				background: transparent
+				border-radius: 15px
+				padding-left: 15px
+				color: #fff
+				height: 35px
+				width: 100%
+				font-family: 'Calibri'
+				padding-right: 25px
+				transition: all .3s ease
+				&:focus
+					border: 2px solid darken(#fff, 30%)
+			::-webkit-input-placeholder
+				color: #979798
+				font-family: 'Calibri'
+			::-moz-placeholder
+				color: #979798
+				font-family: 'Calibri'
+			:-moz-placeholder
+				color: #979798
+				font-family: 'Calibri'
+			:-ms-input-placeholder
+				color: #979798
+				font-family: 'Calibri'
+			i
+				position: absolute
+				right: 10px
+				top: 8px
+				color: #0b86b6
+				font-size: 17px
+				cursor: pointer
+				
+		.menu_button
+			align-self: flex-start
+			a
+				display: block
+				i
+					border: 2px solid #fff
+					border-radius: 50%
+					height: 52px
+					width: 52px
+					text-align: center
+					line-height: 50px
+					font-size: 30px
+					color: #fff
+	.slider_el
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 100vh
+	.header_main
+		text-align: center
+		// padding-top: 155px
+		// padding-bottom: 280px
+		color: #fff
+		h1
+			text-transform: uppercase
+			margin: 0
+			font-family: 'BebasNeueBold'
+			font-size: 80px
+			font-weight: 400
+			// line-height: 11px
+		h5
+			margin: 0
+			font-family: 'Calibri'
+			font-size: 22px
+			font-weight: 400
+			margin-top: 0px
+			margin-bottom: 38px
+		a
+			display: block
+			text-align: center
+			max-width: 170px
+			background-color: #e50a0a
+			text-decoration: none
+			color: #fff
+			margin: 0 auto
+			padding: 20px 0px	
+			color: #ffffff
+			font-family: 'Calibri'
+			font-size: 14px
+			font-weight: 400
+			border: 1px solid #e50a0a
+			line-height: 11px
+			text-transform: uppercase
+			transition: all .5s ease
+			&:hover
+				max-width: 200px
+				border-radius: 5px 
+				border: 1px solid #fff
+				background-color: darken(#e50a0a, 5%)
+	.slider_bottom
+		// display: none
+		width: 1170px
+		position: absolute
+		right: -600px
+		bottom: 0px
+		height: 90px
+		background: #fff
+		p
+			font-size: 55px
+			color: #bec1c6
+			position: absolute
+			left: 50px
+			top: 15px
+			span.digit_big
+				color: #292c3a
+				font-family: "Exo20-Black"
+				font-size: 55px
+				font-weight: 400
+				// line-height: 11px
+				text-transform: uppercase
+			span.digit_small
+				font-family: "Exo20-Regular"
+				font-size: 20px
+				font-weight: 400
+				line-height: 11px
+				text-transform: uppercase	
+				color: #ff0000
+	.fa.fa-chevron-left, .fa.fa-angle-left
+		position: absolute
+		right: 529px
+		bottom: 17px
+		z-index: 9
+		color: #b8bac1
+		font-size: 65px
+		font-weight: 100
+		cursor: pointer
+		
+
+	.fa.fa-chevron-right, .fa.fa-angle-right
+		position: absolute
+		right: 360px
+		bottom: 17px
+		z-index: 9
+		color: #b8bac1
+		font-size: 65px
+		font-weight: 100
+		cursor: pointer
+		
+#about
+	padding-top: 170px
+	position: relative
+	padding-bottom: 110px
+	// overflow: hidden
+	// background: url(../img/about_left.png) no-repeat 0% 0% 
+	.container
+		max-width: 1180px
+	
+	.bg_img
+		position: absolute
+		right: -700px
+		top: -460px	
+		pointer-events: none
+	.bg_img-left
+		position: absolute
+		left: -500px
+		top: 0px	
+	// background: url(../img/about_bg.png) no-repeat 50% 50% /cover
+	.about_info
+		display: flex
+		position: relative
+		.photo
+			position: absolute
+			right: -15px
+		h6
+			// width: 100px
+			// border-bottom: 1px solid red
+			color: #020302
+			font-family: 'Calibri'
+			font-size: 14px
+			font-weight: 700
+			transform: rotate(-90deg)
+			text-transform: uppercase
+			margin: 0
+			position: relative
+			position: absolute
+			left: -40px
+			top: 80px
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				height: 7px
+				background: #0987b9
+				width: 426px
+		.about_box
+			// margin-left: 95px
+			h5
+				color: #101010
+				font-family: "CalibriBold"
+				font-weight: 700
+				font-size: 22px
+				margin: 0
+			p
+				color: #101010
+				font-family: "Calibri"
+				font-weight: 400
+				font-size: 22px
+				margin: 0
+				margin-top: 20px
+		h3
+			color: #101010
+			font-family: "BebasNeueBold"
+			font-size: 70px
+			font-weight: 400
+			line-height: 72px
+			text-transform: uppercase
+			margin: 0
+			margin-bottom: 70px
+			margin-left: 75px
+		.box_info
+			border: 7px solid #e1e1e1
+			padding-top: 60px
+			padding-left: 45px
+			padding-bottom: 45px
+			padding-right: 90px
+			width: 770px
+			display: flex
+			justify-content: space-between
+
+			.more_button
+				color: #000000
+				display: block
+				align-self: flex-end
+				font-family: "Calibri"
+				padding-top: 20px
+				padding-bottom: 20px
+				width: 249px
+				text-align: center
+				letter-spacing: 0.35px
+				font-size: 14px
+				font-weight: 700
+				// line-height: 11px
+				text-transform: uppercase
+				border: 3px solid #e50a0a
+				text-decoration: none
+				transition: all .3s ease
+				&:hover
+					background: #e50a0a
+					color: #fff
+					border-radius: 5px
+				
+			.box_inner
+				max-width: 295px
+	.wrap_ab-img
+		margin-top: -65px
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+		.ab_img-item
+			position: relative
+			transition: all .3s ease
+			img
+				display: block
+			&:hover
+				&:before
+					transition: all .3s ease
+					content: ''
+					position: absolute
+					top: 0
+					left: 0
+					right: 0
+					bottom: 0
+					background-color: rgba(0,0,0,0.2)  
+					z-index: 1
+					
+#services
+	background: #f0eeee
+	padding-top: 100px
+	padding-bottom: 30px
+	h2
+		color: #101010
+		font-family: "BebasNeueBold"
+		font-size: 70px
+		font-weight: 400
+		line-height: 72px
+		text-transform: uppercase
+		letter-spacing: 1.75px
+		margin: 0
+		max-width: 180px
+		margin-left: 60%
+		&:after
+			content: ''
+			display: block
+			height: 7px
+			margin-top: 10px
+			width: 70px
+			background-color: #0987b9
+			margin-bottom: 30px
+	.offer_services
+		display: flex
+		justify-content: center
+		.serv_left
+			width: 100%
+			text-align: right
+			z-index: 10
+			margin-top: -110px
+			img
+		.serv_right
+			z-index: 5
+			width: 100%
+			display: flex
+			justify-content: flex-start
+			align-items: flex-start
+			padding-top: 50px
+			padding-bottom: 35px
+			padding-left: 140px
+			background: #e50a0a
+			margin-left: -90px
+			margin-bottom: -90px
+			.point_serv
+				margin-left: 55px
+				h6
+					color: #ffffff
+					font-family: 'Calibri'
+					font-size: 30px
+					margin: 0
+					font-weight: 700
+					line-height: 24px
+					margin-bottom: 45px
+			ul
+				margin: 0
+				padding: 0
+				list-style: none
+				li
+					a
+						color: #cfcfcf
+						display: block
+						
+						font-family: 'Calibri'
+						font-size: 22px
+						font-weight: 400
+						line-height: 24px
+						text-decoration: underline
+						margin-bottom: 10px
+						transition: all .5s ease
+						&:hover
+							color: lighten(#cfcfcf, 15%)
+							text-decoration: none
+							
+#avdantages
+	padding-top: 130px
+	padding-bottom: 150px
+	h2
+		color: #101010
+		font-family: "BebasNeueBold"
+		font-size: 70px
+		font-weight: 400
+		margin: 0
+		padding: 0
+		line-height: 72px
+		text-transform: uppercase
+		display: flex
+		align-items: flex-end
+		letter-spacing: 1.75px
+		margin-bottom: 130px
+		&:before
+			content: ''
+			display: block
+			background-color: #0987b9
+			width: 7px 
+			height: 260px
+			margin-bottom: 15px
+			margin-right: 65px
+	.wrap_advantages
+		display: flex
+		justify-content: space-between
+		.adv_item
+			width: 100%
+			display: flex
+			align-items: flex-start
+			margin-bottom: 60px
+			.adv_icon
+				// width: 68px
+				// text-align: right
+				img
+					width: 63px
+			.adv_text
+				margin-left: 40px
+				max-width: 445px
+				h5
+					margin: 0
+					color: #101010
+					font-family: 'Calibri'
+					font-size: 22px
+					font-weight: 700
+					line-height: 24px
+					margin-bottom: 20px
+				p
+					margin: 0
+					color: #686868
+					font-family: 'Calibri'
+					font-size: 22px
+					font-weight: 400
+					line-height: 18px
+					min-height: 70px
+#application
+	padding-top: 108px
+	padding-bottom: 130px
+	background: url(../img/app_bg.png) no-repeat center/cover
+	.app_form
+		max-width: 1170px
+		margin: 0 auto
+		background-color: #fff
+		background: url(../img/app.png) no-repeat 100% 50%, #fff 
+		padding-top: 56px
+		padding-bottom: 56px
+		position: relative
+		// text-align: center
+		&:before
+			content: ""
+			display: block
+			height: 188px
+			width: 7px
+			left: 50%
+			background-color: #0987b9
+			position: absolute
+			left: 38.5%
+			top: -150px
+			
+
+		
+		h2
+			color: #101010
+			font-family: "BebasNeueBold"
+			font-size: 70px
+			font-weight: 400
+			line-height: 72px
+			text-transform: uppercase
+			letter-spacing: 1.75px
+			margin: 0
+		h5
+			color: #101010
+			margin: 0
+			font-family: 'Calibri'
+			font-size: 24px
+			font-weight: 700
+			line-height: 24px
+			margin-top: 15px
+		.inputs
+			display: flex
+			justify-content: center
+			margin-top: 45px
+			margin-bottom: 29px
+
+			input
+				max-width: 270px
+				border: 3px solid #e1e1e1
+				height: 50px
+				padding-left: 20px
+				color: #575757
+				font-family: 'Calibri'
+				font-size: 18px
+				font-weight: 400
+				line-height: 24px
+				transition: all .3s ease
+				&:focus
+					border: 3px solid darken(#e1e1e1, 20%)
+				&:last-child
+					margin-left: 30px
+			::-webkit-input-placeholder
+				color: #575757
+				font-family: 'Calibri'
+				font-size: 18px
+				font-weight: 400
+				line-height: 24px
+			::-moz-placeholder
+				color: #575757
+				font-family: 'Calibri'
+				font-size: 18px
+				font-weight: 400
+				line-height: 24px
+			:-moz-placeholder
+				color: #575757
+				font-family: 'Calibri'
+				font-size: 18px
+				font-weight: 400
+				line-height: 24px
+			:-ms-input-placeholder
+				color: #575757
+				font-family: 'Calibri'
+				font-size: 18px
+				font-weight: 400
+				line-height: 24px
+		.send_button
+			color: #ffffff
+			font-family: 'Calibri'
+			background-color: #e50a0a
+			text-decoration: none
+			padding: 24px 0px
+			display: block
+			max-width: 250px
+			margin: 0 auto
+			font-size: 14px
+			font-weight: 700
+			line-height: 11px
+			text-transform: uppercase
+			letter-spacing: 0.35px
+			transition: all .3s ease
+			&:hover
+				max-width: 270px
+				background: darken(#e50a0a, 10%)
+				border-radius: 5px
+		.form_offer
+			margin-left: 150px
+			text-align: center
+			max-width: 610px
+#documents
+	padding-top: 130px
+	padding-bottom: 70px
+	.wrap_docum
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+		.doc_present
+			border: 25px solid #464646
+			background-color: #ffffff
+			z-index: 19
+			.doc_in_present
+				border: 7px solid #363636
+				background-color: #ffffff
+				padding-top: 90px
+				padding-right: 110px
+				padding-bottom: 100px
+				padding-left: 105px
+				position: relative
+				img
+					max-width: none
+		.doc_right
+			width: 100%
+			position: relative
+			h6
+				letter-spacing: 0.35px
+				color: #020302
+				font-family: 'Calibri'
+				font-size: 14px
+				font-weight: 700
+				transform: rotate(-90deg)
+				text-transform: uppercase
+				margin: 0
+				position: relative
+				position: absolute
+				left: 0px
+				top: 13px
+				&:after
+					content: ''
+					display: block
+					position: absolute
+					height: 7px
+					background: #0987b9
+					width: 250px
+			h2
+				margin: 0
+				color: #101010
+				font-family: "BebasNeueBold"
+				font-size: 70px
+				font-weight: 400
+				line-height: 72px
+				text-transform: uppercase
+				letter-spacing: 1.75px
+				margin-bottom: 100px
+				margin-left: 90px
+			.doc_right-box
+				border: 7px solid #e1e1e1
+				background-color: #ffffff
+				max-width: 720px
+				padding-top: 65px
+				padding-bottom: 95px
+				padding-left: 180px
+				width: 720px
+				z-index: 6
+				margin-left: -80px
+				margin-bottom: -50px
+				.doc_list
+					max-width: 380px
+					a
+						color: #686868
+						font-size: 22px
+						font-weight: 400
+						line-height: 18px
+						font-family: "Calibri"
+						text-decoration: none
+						
+					&:first-child
+						margin-bottom: 35px
+				a.show
+					color: #040404
+					font-family: 'Calibri'
+					font-size: 14px
+					font-weight: 700
+					line-height: 11px
+					text-transform: uppercase
+					letter-spacing: 0.35px
+					display: block
+					margin-top: 30px
+					text-decoration: none
+					border: 3px solid #e50a0a
+					max-width: 168px
+					text-align: center
+					padding: 20px 0px
+					transition: all .5s ease
+					&:hover
+						background: #e50a0a
+						color: #fff
+						border-radius: 5px
+				h5
+					font-size: 22px
+					font-weight: 400
+					line-height: 18px
+					color: #101010
+					font-family: "CalibriBold"
+					font-weight: 700
+					margin: 0
+					margin-bottom: 10px
+				p
+					color: #686868
+					font-size: 22px
+					font-weight: 400
+					line-height: 18px
+					font-family: "Calibri"
+#water_count
+	padding-top: 50px
+	padding-bottom: 100px	
+	h2
+		color: #101010
+		font-family: "BebasNeueBold"
+		font-size: 70px
+		font-weight: 400
+		line-height: 72px
+		text-transform: uppercase
+		letter-spacing: 1.75px
+		&:after
+			content: ''
+			display: block
+			width: 70px
+			height: 7px
+			background-color: #0987b9
+			margin-top: 15px
+	.wrap_water
+		p
+			color: #686868
+			font-family: Calibri
+			font-size: 22px
+			font-weight: 400
+			line-height: 26px
+			margin-bottom: 50px
+#map
+	position: relative
+	// overflow-y: hidden
+	iframe
+		display: block
+		
+	.container
+		position: absolute
+		top: 0%
+		bottom: 0
+		margin: 0 auto
+		left: 50%
+		pointer-events: none
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		transform: translateX(-50%)
+	.map_block
+		// position: absolute
+		// right: 0
+		pointer-events: auto
+		max-height: 290px
+		max-width: 570px
+		background: #fff
+		padding-top: 45px
+		padding-bottom: 50px
+
+		padding-left: 35px
+		padding-right: 40px
+		display: flex
+		justify-content: flex-start
+		.right_map
+			margin-left: -50px
+		ul
+			margin: 0
+			padding: 0
+			list-style: none
+			li
+				color: #686868
+				font-family: Calibri
+				font-size: 22px
+				font-weight: 400
+				margin-bottom: 30px
+				// line-height: 14px
+				span
+					color: #101010
+					font-family: "CalibriBold"
+					font-weight: 700
+			li.tel_li
+				list-style-image: url(../img/phone_v.png)
+			li.mes_li
+				list-style-image: url(../img/message_v.png)
+#question
+	background: url(../img/que_bg.png) no-repeat center/cover
+	padding: 170px 0px
+	.wrap_question
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+		position: relative
+		
+		.ques_main
+			width: 770px
+		.head_que
+			display: flex
+			justify-content: space-between
+		h2
+			color: #ffffff
+			font-family: "BebasNeueBold"
+			font-size: 70px
+			font-weight: 400
+			line-height: 72px
+			text-transform: uppercase
+			letter-spacing: 1.75px
+			margin: 0
+		h5
+			color: #ffffff
+			font-family: Calibri
+			font-size: 22px
+			font-weight: 700
+			line-height: 24px
+			margin: 0
+			max-width: 360px
+			margin-left: 35px
+		.form-item 
+			display: inline-block
+			vertical-align: top
+			position: relative
+			width: 100%
+			&:first-child
+				margin-right: 30px
+		.form-input 
+			width: 100%
+			height: 40px
+			padding: 5px 15px
+			padding-left: 0
+			background: transparent
+			border: none
+			border-bottom: 2px solid #ffffff
+			color: #c9c9c9
+			font-family: Calibri
+			font-size: 18px
+			font-weight: 400
+			line-height: 24px
+			transition: all .3s ease
+			&:focus
+				border-bottom: 2px solid darken(#fff, 50%)
+		.form-label 
+			position: absolute
+			pointer-events: none
+			left: 0px
+			top: 0
+			line-height: 40px
+			transition: .3s
+			color: #c9c9c9
+			font-family: Calibri
+			font-size: 18px
+			font-weight: 400
+			line-height: 24px
+
+		.form-input:focus~.form-label,
+		.form-input:not(:focus):valid~.form-label 
+			top: -15px
+			font-size: 14px
+		.inputs
+			display: flex
+			margin-bottom: 65px
+			margin-top: 100px
+		.ques_r
+			// position: relative
+			
+			a
+				color: #ffffff
+				font-family: "Calibri"
+				display: block
+				font-size: 14px
+				font-weight: 700
+				line-height: 11px
+				text-transform: uppercase
+				letter-spacing: 0.35px
+				text-decoration: none
+				padding: 20px 0px
+				border: 1px solid #e50a0a
+				text-align: center
+				background: #e50a0a
+				width: 230px
+				transition: all .3s ease
+				&:hover
+					border: 1px solid #fff
+					border-radius: 5px
+					background: darken(#e50a0a, 10%)
+		h6
+			letter-spacing: 0.35px
+			color: #fff
+			font-family: 'Calibri'
+			font-size: 14px
+			font-weight: 700
+			transform: rotate(-90deg)
+			text-transform: uppercase
+			margin: 0
+			position: absolute
+			top: 13px
+			right: 90px
+			z-index: 99
+			line-height: 15px
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				height: 7px
+				background: #0987b9
+				width: 349px
+
+footer
+	padding-top: 45px
+	padding-bottom: 55px
+	background-color: #0c0c0c			
+	.wrap_foot
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.police
+			color: #8b8b8b
+			font-family: Calibri
+			font-size: 18px
+			font-weight: 400
+			line-height: 11px
+		.erd
+			p
+				color: #ffffff
+				font-family: Calibri
+				font-size: 18px
+				margin-bottom: 8px
+				font-weight: 400
+				line-height: 11px
+.header_sect .top_line.navbar-fixed-top
+	position: fixed
+	background-color: rgba(0, 0, 0, .9)!important
+	padding: 5px 0px
+	z-index: 85
+	-webkit-transition  : all ease-in-out 0.70s
+	-moz-transition     : all ease-in-out 0.70s
+	-o-transition       : all ease-in-out 0.70s
+	-ms-transition      : all ease-in-out 0.70s
+	transition          : all ease-in-out 0.70s
+	.wrap_head
+		align-items: center
+		.head_form
+			// input
+			// 	display: none
+			// i
+			// 	display: none
+			a
+				margin-top: 8px
+		.logo
+			img
+				max-width: 85%
+		.service_info ul li.li_phone
+			margin-bottom: 8px
+
+#overlay 
+	padding-top: 50px
+	width: 100%
+	height: 100%
+	background-color: black
+	opacity: 0.95
+	position: fixed
+	z-index: 999
+	// display: none
+	opacity: 0
+	top: -1000px
+	-webkit-transition: all 0.5s ease
+	transition: all 0.5s ease
+	z-index: 70
+	overflow: hidden
+	.head_menu
+		.wrap_police
+			display: flex
+			justify-content: space-between
+			align-items: center
+			.button_menu_h
+				a
+					border: 2px solid #e50a0a
+					background: #e50a0a
+					// border-radius: 25px
+					padding: 15px 20px
+					font-size: 14px
+					font-family: "CalibriBold"
+					color: #fff
+					text-decoration: none
+					text-transform: uppercase
+					line-height: 46px
+					transition: all .3s ease
+					&:hover
+						border: 2px solid #e50a0a
+						border-radius: 20px
+			.phone_box
+				display: flex
+				a
+					color: #fff
+					font-family: "Calibri"
+					text-decoration: none
+					display: block
+					
+				p
+					font-size: 13px
+					color: #abbcc8
+				a.phone
+					font-family: 'CalibriBold'
+					font-size: 20px
+					// margin-right: 30px
+
+				.offer_ph
+					margin-right: 30px
+					p
+						margin-left: 22px
+						font-family: "Calibri"
+		.head_menu_from
+			display: flex
+			margin-top: 15px
+			justify-content: space-between
+			position: relative
+			.logo_mob
+				display: none
+				
+			i
+				position: absolute
+				color: #fff
+				top: 20%
+				font-size: 30px
+				font-weight: 100
+				right: 80px
+				cursor: pointer
+				
+				
+			a
+				display: block
+				text-align: center
+				text-decoration: none
+				
+				span
+					color: #fff
+					text-transform: uppercase
+					font-size: 10px
+					font-family: "Calibri"
+
+
+				
+			input
+				width: 100%
+				background: transparent
+				border: 2px solid #fff
+				font-family: "Calibri"
+				padding: 8px 62px 9px 11px
+				font-size: 18px
+				color: #fff
+			::-webkit-input-placeholder
+				color: #fff
+				font-size: 18px
+				font-family: 'Calibri'
+			::-moz-placeholder
+				color: #fff
+				font-size: 18px
+				font-family: 'Calibri'
+			:-moz-placeholder
+				color: #fff
+				font-size: 18px
+				font-family: 'Calibri'
+			:-ms-input-placeholder
+				color: #fff
+				font-size: 18px
+				font-family: 'Calibri'
+	nav
+		margin-top: 50px
+		.main_ul
+			padding: 0
+			margin: 0
+			display: block
+			display: flex
+			flex-direction: column
+			flex-wrap: wrap
+			height: 260px
+			li
+				display: block
+				margin-bottom: 20px
+				a
+					display: flex
+					align-items: center
+					font-size: 14px
+					color: #fff
+					text-decoration: none
+					font-family: 'CalibriBold'
+					text-transform: uppercase
+					img
+						margin-right: 10px
+			.sub_menu
+				margin: 0
+				padding-left: 40px
+				li
+					margin-bottom: 8px
+					a
+						display: block
+						font-size: 16px
+						font-family: 'Calibri'
+						text-decoration: underline
+						text-transform: none
+						&:hover
+							text-decoration: none
+							
+
+					
+.none 
+	display: none
+
+.ovrlhdn 
+	overflow: hidden !important
+
+
+.dbbl 
+	display: block !important
+// .box_info, .photo, .send_button, .ab_img-item, .serv_left, .serv_right, .wrap_advantages_first, .wrap_advantages_sec
+// 	display: none
+
+@media all and (max-width: 1275px)
+	#about .about_info .box_info
+		padding-right: 30px
+		width: 675px
+	#about .wrap_ab-img .ab_img-item
+		margin-right: 10px
+		&:last-child
+			margin-right: 0
+	#about .about_info .photo
+		right: -75px
+		top: 70px
+	#about .about_info .photo img
+		max-width: 80%
+	#about .about_info .box_info
+		padding-left: 20px
+	#documents .wrap_docum .doc_right .doc_right-box
+		padding-left: 130px
+		max-width: 650px
+		width: 650px
+@media all and (max-width: 1230px)
+	#overlay nav .main_ul
+		height: 350px
+@media all and (max-width: 1200px)
+	#documents .wrap_docum .doc_right .doc_right-box
+		padding-left: 90px
+		max-width: 590px
+		width: 590px
+@media all and (max-width: 1135px)
+	#about .about_info .photo
+		position: static
+		width: 100%
+		text-align: left
+		margin-left: 10px
+		// flex-shrink: 0.5
+	#about .about_info
+		align-items: flex-end
+	#about .about_info .box_info .more_button
+		margin-top: 20px
+	#about .about_info .box_info
+		width: 100%
+	#about .about_info .box_info
+		width: 100%
+		flex-direction: column
+	#about .about_info .box_info .box_inner
+		width: 350px
+	#about .about_info .box_info .more_button
+		align-items: flex-start
+	#about .wrap_ab-img
+		margin-top: 0px
+	#documents .wrap_docum .doc_present .doc_in_present
+		padding: 50px 60px 50px 60px
+	#documents .wrap_docum .doc_right .doc_right-box
+		width: 550px
+		max-width: 550px
+@media all and (max-width: 1120px)
+	#question .wrap_question .ques_main
+		width: 700px
+	#question .wrap_question h2
+		font-size: 40px
+	#question .wrap_question h5
+		font-size: 20px
+@media all and (max-width: 1090px)
+	.header_sect .wrap_head .service_info
+		width: 350px
+		min-width: auto
+@media all and (max-width: 1045px)
+	#question .wrap_question .ques_main
+		width: 620px	
+@media all and (max-width: 995px)
+	.header_sect .wrap_head .service_info ul li.li_address
+		display: none
+	.header_sect .wrap_head .service_info ul
+		justify-content: center
+	.header_sect .wrap_head .service_info
+		width: auto
+	.header_sect .slider_bottom
+		width: 995px
+	.header_sect .fa.fa-chevron-left, .header_sect .fa.fa-angle-left
+		right: 360px
+	.header_sect .fa.fa-chevron-right, .header_sect .fa.fa-angle-right
+		right: 180px
+	#about .about_info
+		flex-direction: column
+		align-items: flex-start
+	#about .about_info .box_info .box_inner
+		max-width: 100%
+		width: 100%
+	#about .about_info .photo
+		margin-top: 20px
+		margin-left: 0px
+		margin-bottom: 10px
+	#about .about_info .photo img
+		max-width: 100%
+	#services .offer_services .serv_right
+		padding-left: 40px
+	#services .offer_services .serv_right .point_serv
+		margin-left: 30px
+	#application .app_form .form_offer
+		margin-left: 0px
+	#documents .wrap_docum
+		flex-direction: column
+	#documents .wrap_docum .doc_present
+		order: 2
+	#documents .wrap_docum .doc_right .doc_right-box
+		margin-left: 0px
+@media all and (max-width: 965px)
+	#question .wrap_question
+		flex-direction: column
+		align-items: flex-start
+	#question .wrap_question .ques_r a
+		margin-top: 20px
+	#question .wrap_question h6
+		right: -10px
+	#overlay nav .main_ul .sub_menu
+		display: none
+	#overlay nav .main_ul
+		height: 100%
+	#overlay .head_menu .wrap_police
+		display: none
+	#overlay .head_menu .head_menu_from
+		justify-content: space-between
+		align-items: center
+	#overlay .head_menu .wrap_police
+		display: none
+	#overlay .head_menu .head_menu_from input
+		display: none
+	#overlay .head_menu .head_menu_from a span
+		display: block
+	#overlay .head_menu .head_menu_from i
+		display: none
+	#overlay nav .main_ul
+		max-width: 290px
+		margin: 0 auto
+	#overlay
+		padding-top: 0px
+	#overlay nav
+		margin-top: 20px
+	#overlay .head_menu .head_menu_from .logo_mob
+		display: block
+		
+	// ul.main_ul
+	// 	position: relative
+		
+	// ul.sub_menu 
+	// 	display: none
+	// 	position: absolute
+	// 	padding: 0
+	// 	margin: 0
+	// 	width: 287px
+	// 	top: 42px
+	// 	left: 0
+	// 	padding: 10px 0px
+	// 	z-index: 999
+
+@media all and (max-width: 860px)
+	#avdantages .wrap_advantages .adv_item .adv_text p
+		min-height: 85px
+	#avdantages .wrap_advantages .adv_item .adv_text
+		margin-left: 15px
+	#map .map_block
+		margin: 0 auto
+	#map .map_block ul li
+		font-size: 15px
+@media all and (max-width: 800px)
+	#avdantages .wrap_advantages .adv_item .adv_text
+		max-width: 100%
+	#avdantages .wrap_advantages
+		flex-direction: column
+	#avdantages .wrap_advantages .adv_item
+		margin-bottom: 30px	
+	#avdantages .wrap_advantages .adv_item .adv_icon img
+		min-width: 63px
+	#avdantages .wrap_advantages .adv_item .adv_text p
+		min-height: auto
+	#application .app_form
+		background: rgba(255, 255, 255, .85)
+	#application .app_form .form_offer
+		margin: 0 auto
+	#application .app_form:before
+		left: 50%	
+@media all and (max-width: 775px)
+	.header_sect .wrap_head .service_info
+		display: none
+@media all and (max-width: 765px)
+	.header_sect .header_main h1
+		font-size: 40px
+	#services .offer_services
+		flex-direction: column
+	#services .offer_services .serv_right
+		margin-left: 0
+	#services .offer_services .serv_left
+		margin-top: 0
+	#services .offer_services .serv_right
+		// background: rgba(90, 4, 4, .5), url(../img/servic.png)
+	#services .offer_services .serv_left img
+		display: block
+	#services .offer_services .serv_right
+		justify-content: space-around
+		padding-left: 0
+	#services h2
+		text-align: center
+		max-width: 100%
+		width: 100%
+		margin-left: 0px
+		margin-bottom: 20px
+		&:after
+			margin: 0 auto
+	#question .wrap_question .ques_main
+		width: 100%
+	#question .wrap_question h6
+		right: -15px
+	#question
+		padding: 120px 0px
+	#question .wrap_question h6:after
+		width: 245px
+	#question .wrap_question .head_que
+		flex-direction: column
+	#question .wrap_question h5
+		margin-left: 0
+@media all and (max-width: 720px)
+	footer .wrap_foot .police
+		display: none
+		
+@media all and (max-width: 620px)
+	.header_sect .slider_bottom
+		background: rgba(255, 255, 255, .3)
+		width: 100%
+		left: 0
+		right: 0
+	.header_sect .slider_bottom p
+		left: 50%
+		transform: translate(-50%)
+	.header_sect .fa.fa-chevron-left, .header_sect .fa.fa-angle-left
+		left: 25%
+	.header_sect .fa.fa-chevron-right, .header_sect .fa.fa-angle-right
+		right: 25%
+	#about .wrap_ab-img
+		flex-direction: column
+		align-items: center
+	#about .about_info .photo
+		text-align: center
+	#about .wrap_ab-img .ab_img-item
+		margin-right: 0px
+		margin-bottom: 10px
+	#avdantages h2
+		font-size: 40px
+		line-height: 40px
+		margin-bottom: 50px
+	#documents .wrap_docum
+		align-items: center
+	#avdantages h2:before
+		margin-right: 20px
+		height: 160px
+		margin-bottom: 0
+	#documents .wrap_docum .doc_right .doc_right-box
+		margin: 0 auto
+		margin-bottom: 20px
+		width: 100%
+		max-width: 100%
+		padding-left: 30px
+		padding-bottom: 60px
+	#documents .wrap_docum .doc_right h2
+		text-align: center
+		margin-left: 0
+		font-size: 50px
+		margin-bottom: 50px
+@media all and (max-width: 525px)
+	.header_sect .wrap_head .head_form
+		max-width: 145px
+	.header_sect .wrap_head .head_form a
+		font-size: 14px
+	#application .app_form .inputs
+		flex-direction: column
+		input
+			max-width: 250px
+			width: 250px
+
+			margin: 0 auto
+			margin-bottom: 10px
+	#application .app_form .inputs input:last-child
+		margin-left: 0px
+		margin: 0 auto
+		margin-bottom: 10px
+	#documents .wrap_docum .doc_present .doc_in_present img
+		max-width: 100%
+	#documents .wrap_docum .doc_present .doc_in_present
+		padding: 15px 10px 15px 10px
+	#documents .wrap_docum .doc_present
+		border: 10px solid #464646
+	#water_count h2
+		font-size: 50px
+		line-height: 50px
+	#water_count .wrap_water p
+		font-size: 20px
+		margin-bottom: 30px
+	#water_count
+		padding-top: 20px
+@media all and (max-width: 450px)
+	.header_sect .wrap_head .head_form
+		display: none
+	#about .about_info h6
+		left: -30px
+	#about .about_info h3
+		text-align: center
+		margin-left: 0
+		font-size: 50px
+		line-height: 50px
+	#services .offer_services .serv_right .img_serv
+		order: 2
+		img
+			max-width: 90%
+	#services .offer_services .serv_right .point_serv
+		margin-left: 10px
+	#services .offer_services .serv_right ul li a
+		font-size: 18px
+	#services .offer_services .serv_right .point_serv h6
+		margin-bottom: 30px
+	#services
+		padding-top: 70px
+	footer .wrap_foot
+		flex-direction: column
+		align-items: center
+		.logo
+			margin-bottom: 20px
+	#map .map_block
+		flex-direction: column
+	#map .map_block .right_map
+		margin-left: 0px
+	#map .map_block
+		padding-top: 20px
+		padding-bottom: 30px
+	#map .map_block ul li
+		margin-bottom: 15px
+@media all and (max-width: 400px)
+	#documents .wrap_docum .doc_right h6
+		left: -30px
+
+@media all and (max-width: 370px)
+	.header_sect .fa.fa-chevron-left, .header_sect .fa.fa-angle-left
+		left: 18%
+	.header_sect .fa.fa-chevron-right, .header_sect .fa.fa-angle-right
+		right: 18%
+	#about .about_info .box_info
+		padding-left: 15px
+		padding-right: 15px
